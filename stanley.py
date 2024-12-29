@@ -615,21 +615,5 @@ def main():
             except IndexError:
                 pass
 
-
-def login():
-    clear()
-    user = "1337"
-    passwd = "1337"
-    username = input("</> Username: ")
-    password = getpass.getpass(prompt='</> Password: ')
-    if username != user or password != passwd:
-        print("")
-        print("</> Invalid credentials! Abandoning...")
-        sys.exit(1)
-    elif username == user and password == passwd:
-        print("</> Welcome to Stanley CnC!")
-        time.sleep(0.3)
-        ascii_vro()
-        main()
-
-login()
+ascii_vro()
+main()
